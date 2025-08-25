@@ -6,7 +6,7 @@ def test_has_title(page: Page):
 
     # Expect a title "to contain" a substring.
     expect(page).to_have_title(re.compile("Playwright"))
-    page.screenshot(path=r"C:\Users\tateviky\PycharmProjects\PythonProject\tc1.png")
+    page.screenshot(path="C:\\Users\\tateviky\PycharmProjects\PythonProject\\tc1.png")
 
 def test_get_started_link(page: Page):
     page.goto("https://playwright.dev/")
